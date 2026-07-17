@@ -25,7 +25,7 @@ namespace DesafioFundamentos.Models
       Console.WriteLine("Digite a placa do veículo para remover:");
 
       string placa = "";
-      placa = Console.ReadLine();
+      placa = Console.ReadLine().ToUpper();
 
       if (veiculos.Any(placaAdicionada => placaAdicionada.ToUpper() == placa.ToUpper()))
       {
